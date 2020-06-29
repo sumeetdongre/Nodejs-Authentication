@@ -1,0 +1,25 @@
+<header>
+    
+    <div>Authenication Application</div>
+    <ul>
+        <% if(locals.user) { %>
+            <li>
+                <a href="/" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true"><%=user.name %></a>
+                <a href="/users/profile" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Update Password</a>
+            </li>
+            <li>
+                <a href="/users/sign-out" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Sign Out</a>
+        
+            </li>
+        <% }else{ %>
+            <li>
+                 <a href="/users/signin" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Sign In</a>
+              
+            </li>
+            <li>
+                 <a href="/users/signup" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Sign Up</a>
+            
+            </li>
+         <% } %>   
+    </ul>
+</header>
