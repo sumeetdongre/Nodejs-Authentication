@@ -8,7 +8,7 @@ Functionalites
 
 1. SignIn/SignUp user through email.
 
-2. Password encription through Bcrypt
+2. Password encryption through Bcrypt
 
 3. Reset Password after SignIn
 
